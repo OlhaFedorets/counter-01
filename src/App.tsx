@@ -19,11 +19,13 @@ function App() {
 
     return (
         <div className="App">
-            <div>{count}</div>
-            <Button title={'inc'}
-                    onClickHandler={increaseFunction}/>
-            <Button title={'reset'}
-                    onClickHandler={resetFunction}/>
+            <div className={"Count"}>{count}</div>
+            {/*<div>*/}
+                <Button title={'inc'}
+                        onClickHandler={increaseFunction}/>
+                <Button title={'reset'}
+                        onClickHandler={resetFunction}/>
+            {/*</div>*/}
         </div>
     );
 }
