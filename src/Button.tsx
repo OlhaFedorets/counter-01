@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from "styled-components";
 
 type ButtonPropsType = {
     title: string
@@ -12,3 +13,5 @@ export const Button = ({title, onClickHandler}: ButtonPropsType) => {
         <button onClick={onClickHandler}>{title}</button>
     );
 };
+
+
