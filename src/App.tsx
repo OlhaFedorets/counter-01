@@ -18,14 +18,14 @@ function App() {
     return (
         <div className="App">
             <div className={count === 5 ? 'maxCount' : "count"}>{count}</div>
-            {/*<div>*/}
-            <Button title={'inc'}
-                    onClickHandler={increaseFunction}
-                    className={count < 5 ? 'activeButton' : 'button'}/>
-            <Button title={'reset'}
-                    onClickHandler={resetFunction}
-                    className={count !== 0 ? 'activeButton' : 'button'}/>
-            {/*</div>*/}
+            <div className={'frame'}>
+                <Button title={'inc'}
+                        onClickHandler={increaseFunction}
+                        className={count < 5 ? 'activeButton' : 'button'}/>
+                <Button title={'reset'}
+                        onClickHandler={resetFunction}
+                        className={count !== 0 ? 'activeButton' : 'button'}/>
+            </div>
         </div>
     );
 }

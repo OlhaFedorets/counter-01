@@ -44,8 +44,21 @@
   /*}*/
 }
 
+.frame{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+    border: 3px solid #47a5af;
+    border-radius: 10px;
+    width: 280px;
+    height: 60px;
+    margin-left: 10px;
+
+}
+
 .button{
-  margin: 20px 0 0 20px;
+  margin: 10px;
   width: 120px;
   height: 40px;
   background-color: #47a5af;
@@ -56,7 +69,7 @@
 }
 
 .activeButton{
-  margin: 20px 0 0 20px;
+  margin: 10px;
   width: 120px;
   height: 40px;
   background-color: #47a5af;
