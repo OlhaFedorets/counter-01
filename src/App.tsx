@@ -7,13 +7,13 @@ function App() {
 
     const [count, setCount] = useState<number>(0)
 
-    const increaseFunction = () => {
+    function increaseFunction() {
         if (count < 5) {
             setCount(count + 1)
         }
     }
 
-    const resetFunction = () => {
+    function resetFunction() {
         setCount(0)
     }
 
