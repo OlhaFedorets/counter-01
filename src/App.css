@@ -5,7 +5,7 @@
   border: 3px solid #47a5af;
   border-radius: 10px;
 
-  .Count {
+  .count {
     height: 150px;
     width: 280px;
     font-size: 100px;
@@ -17,7 +17,20 @@
     position: relative;
   }
 
-  /*.Count::after {*/
+  .maxCount{
+    color: #b62222;
+    height: 150px;
+    width: 280px;
+    font-size: 100px;
+    background-color: #47a5af;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+
+    position: relative;
+  }
+
+  /*.count::after {*/
   /*  content: '';*/
   /*  display: inline-block;*/
   /*  border: 3px solid #47a5af;*/
@@ -31,5 +44,26 @@
   /*}*/
 }
 
+.button{
+  margin: 20px 0 0 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #47a5af;
+  opacity: 0.5;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.activeButton{
+  margin: 20px 0 0 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #47a5af;
+  opacity: 1;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
 
 

@@ -8,9 +8,7 @@ function App() {
     const [count, setCount] = useState<number>(0)
 
     function increaseFunction() {
-        if (count < 5) {
-            setCount(count + 1)
-        }
+        count < 5 && setCount(count + 1)
     }
 
     function resetFunction() {
@@ -19,12 +17,14 @@ function App() {
 
     return (
         <div className="App">
-            <div className={"Count"}>{count}</div>
+            <div className={count === 5 ? 'maxCount' : "count"}>{count}</div>
             {/*<div>*/}
-                <Button title={'inc'}
-                        onClickHandler={increaseFunction}/>
-                <Button title={'reset'}
-                        onClickHandler={resetFunction}/>
+            <Button title={'inc'}
+                    onClickHandler={increaseFunction}
+                    className={count < 5 ? 'activeButton' : 'button'}/>
+            <Button title={'reset'}
+                    onClickHandler={resetFunction}
+                    className={count !== 0 ? 'activeButton' : 'button'}/>
             {/*</div>*/}
         </div>
     );
