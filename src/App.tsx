@@ -20,10 +20,10 @@ function App() {
             <div className={count === 5 ? 'maxCount' : "count"}>{count}</div>
             <div className={'frame'}>
                 <Button title={'inc'}
-                        onClickHandler={increaseFunction}
+                        onClick={increaseFunction}
                         className={count < 5 ? 'activeButton' : 'button'}/>
                 <Button title={'reset'}
-                        onClickHandler={resetFunction}
+                        onClick={resetFunction}
                         className={count !== 0 ? 'activeButton' : 'button'}/>
             </div>
         </div>
