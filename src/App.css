@@ -20,18 +20,6 @@
     text-align: center;
 }
 
-.maxCount {
-    color: #b62222;
-    height: 150px;
-    width: 275px;
-    font-size: 100px;
-    font-weight: bold;
-    background-color: #47a5af;
-    border-radius: 10px;
-    margin: 10px;
-    text-align: center;
-}
-
 .frame {
     display: flex;
     justify-content: space-between;
@@ -39,30 +27,6 @@
     border-radius: 10px;
     width: 275px;
     height: 60px;
-
-
-}
-
-.button {
-    margin: 10px;
-    width: 120px;
-    background-color: #47a5af;
-    opacity: 0.5;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.activeButton {
-    margin: 10px;
-    width: 120px;
-    background-color: #47a5af;
-    opacity: 1;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: bold;
 }
 
 
